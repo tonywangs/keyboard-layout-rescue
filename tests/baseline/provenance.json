@@ -1,0 +1,13 @@
+{
+  "catalog_remote_head": "070fead7ed7bcf12b1e0b4e1188fe7370545d270",
+  "catalog_tree": "5c6a33219db448f37cec25e565fa08161c603ae6",
+  "local_head": "bb1f541fa37a208bd8fe17ff4ecc7d8235a4c5d5",
+  "verified_local_tree": "5c6a33219db448f37cec25e565fa08161c603ae6",
+  "files": {
+    "__init__.py": "b6726f2c3207d7c365e4cbc35d77c3522558120f53eb93021b06dfbc11ce5e9c",
+    "core.py": "585d7896b396ce8e6612704a0d1662991697d49d056d26de3aacc336f2433a12",
+    "layouts.py": "528a78bc9980b920f41edd4432257013de6e3f38da4ce0cd982318fe61b2adef",
+    "report.py": "be52f0191fb79354683dff8ec59e4bd0afc70e81ed8f3a3013b9204496adc504",
+    "template.html": "c3169b897d0ae9f3d057d3635949f3ebfa12ea553b79541e7983309b038c0377"
+  }
+}

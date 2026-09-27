@@ -23,27 +23,20 @@ test_invalid_spans_and_layouts (test_core.MappingTests.test_invalid_spans_and_la
 test_mixed_layout_spans (test_core.MappingTests.test_mixed_layout_spans) ... ok
 test_unicode_offsets_and_separators (test_core.MappingTests.test_unicode_offsets_and_separators) ... ok
 test_worked_recovery (test_core.MappingTests.test_worked_recovery) ... ok
-test_240_seeded_full_schema_comparisons (test_report.ReportTests.test_240_seeded_full_schema_comparisons) ... ok
-test_frozen_baseline_and_workloads (test_report.ReportTests.test_frozen_baseline_and_workloads) ... ok
-test_frozen_suite_size_determinism_and_complete_diagnostics (test_report.ReportTests.test_frozen_suite_size_determinism_and_complete_diagnostics) ... ok
-test_three_candidates_at_input_limit (test_report.ReportTests.test_three_candidates_at_input_limit) ... ok
 
 ----------------------------------------------------------------------
-Ran 24 tests in 16.364s
+Ran 20 tests in 2.512s
 
 OK
 Exit: 0
 $ /usr/bin/python3 scripts/check_installed.py
-/tmp/keyboard-rescue-installed-4vha_45g/isolated installation with spaces/bin/keyboard-rescue
+/tmp/keyboard-rescue-installed-imw1w4s4/isolated installation with spaces/bin/keyboard-rescue
 Installed CLI: 6 offline scenarios passed in a fresh venv, outside checkout; socket audit guard verified.
 Exit: 0
 $ node tests/browser.cjs
-{"browser":"153.0.8010.12","assertions":117,"network":"offline + HTTP(S) abort route","result":"passed"}
-Exit: 0
-$ /usr/bin/python3 scripts/check_comparison.py
-Paired evidence: 96 observations, balanced orders, summaries and all current/baseline artifact hashes verified.
+{"browser":"153.0.8010.12","assertions":29,"network":"offline + HTTP(S) abort route","result":"passed"}
 Exit: 0
 $ /usr/bin/python3 scripts/check_tree.py
-Publication limits: 81 regular files, 560724 bytes; every file <= 10 MiB.
+Publication limits: 63 regular files, 354001 bytes; every file <= 10 MiB.
 Exit: 0
 All verification stages passed. Benchmarks are separate: python3 scripts/benchmark.py

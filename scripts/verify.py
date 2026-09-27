@@ -17,6 +17,7 @@ def main():
         [sys.executable,'-m','unittest','discover','-s','tests','-v'],
         [sys.executable,'scripts/check_installed.py'],
         ['node','tests/browser.cjs'],
+        [sys.executable,'scripts/check_comparison.py'],
         [sys.executable,'scripts/check_tree.py'],
     ]
     log = []

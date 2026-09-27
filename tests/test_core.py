@@ -127,4 +127,5 @@ class MappingTests(unittest.TestCase):
         self.assertEqual(html,html_text(report))
         data = html.split('<script type="application/json" id="report-data">')[1].split('</script>')[0]
         self.assertNotIn('<',data)
-        self.assertEqual(json.loads(data),report)
+        from test_report import unpack_html
+        self.assertEqual(unpack_html(html),report)

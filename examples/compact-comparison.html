@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-__SCRIPT_HASH__'; style-src 'unsafe-inline'; img-src 'none'; connect-src 'none'; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-otOQ4j4GWOtlZTdr0BICObiKShhy6Bf9Sz0CCGT+nAw='; style-src 'unsafe-inline'; img-src 'none'; connect-src 'none'; base-uri 'none'; form-action 'none'; object-src 'none'">
 <title>Keyboard Layout Rescue · Local comparison</title>
 <style>
 :root{color-scheme:light;--ink:#152c2b;--muted:#506664;--accent:#006e60;--line:#cad9d3;--paper:#fafbf7;--mark:#fff0b8}
@@ -35,7 +35,8 @@ input[type=number]{width:7em}input[type=number],select{font:inherit;padding:6px;
 <details open><summary>Model and limitations</summary><ul id="limitations"></ul><p>Views are paginated; browser Find searches only the mounted page. Use page controls or a zero-based code-point index to reach all text; use finding filters and pages to reach every diagnostic. Copy and downloads contain the complete text regardless of page or filter. Tabs and line endings are preserved in exports. Page boundaries preserve code points and CRLF pairs, but may split grapheme clusters. Columns count code points; only LF starts a new line. The visual display may conceal control characters, bidirectional text, or combining marks; consult JSON diagnostics and code-point offsets for exact values.</p></details>
 <footer id="provenance"></footer>
 </main>
-<script type="application/json" id="report-data">__REPORT_DATA__</script>
+<script type="application/json" id="report-data">{"diagnostic_types":[],"html_format":1,"report":{"candidates":[{"changed_characters":8,"changed_spans":[[1,5],[7,11]],"diagnostics":[],"intended_layout":"colemak","mapping_status":"fully_mapped_under_model","text":"hello world\n","unresolved_characters":0},{"changed_characters":10,"changed_spans":[[0,5],[6,11]],"diagnostics":[],"intended_layout":"dvorak","mapping_status":"fully_mapped_under_model","text":"dtggs ,sogi\n","unresolved_characters":0}],"excluded_characters":0,"geometry":"ansi","layout_revision":"2426c5997e9f76a45df2016d1092bff360712e70","limitations":["Candidates are conditional on your layout, geometry and span choices; no language detection is performed.","Rendered text cannot always reveal the original keystrokes. Fully mapped does not mean proven recovery.","Only pinned XKB US QWERTY, Dvorak and Colemak base/Shift levels are modeled, with Caps Lock off.","Caps Lock, dead keys, compose, AltGr, Ctrl/Alt/Meta, keypad, remaps and platform-specific behavior are excluded.","Space, tab, CR and LF are preserved as text separators; their key and modifier history is not inferred.","Unsupported and conflicting ambiguous characters are preserved. No Unicode normalization is applied.","Mixed-layout text needs explicit spans; a valid-looking character does not prove which layout produced it.","Offsets and spans count Unicode code points, not bytes, graphemes or UTF-16 units; ends are exclusive."],"observed_layout":"qwerty","original":"hkuu; w;sug\n","schema_version":"1.0","selected_spans":[{"end":12,"start":0}],"tool_version":"1.0.0"}}
+</script>
 <script id="app">
 'use strict';
 const packed = JSON.parse(document.getElementById('report-data').textContent);

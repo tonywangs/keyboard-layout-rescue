@@ -40,7 +40,13 @@ def main():
         assert (work/'recovered.txt').read_bytes()==b'hello world\r\n'
         assert (work/'wrong.txt').read_bytes()==b'hkuu; w;sug\r\n'
         run('wrong.txt',*base,'--intended','dvorak','--format','html','-o','comparison.html')
-        assert b'Keyboard Layout Rescue' in (work/'comparison.html').read_bytes()
+        html = (work/'comparison.html').read_text()
+        assert 'Keyboard Layout Rescue' in html
+        packed = json.loads(html.split('<script type="application/json" id="report-data">')[1].split('</script>')[0])
+        assert packed['html_format'] == 1
+        assert packed['report']['original'] == 'hkuu; w;sug\r\n'
+        assert packed['report']['candidates'][0]['text'] == 'hello world\r\n'
+        assert 'id="text-page"' in html and 'id="diagnostic-filter"' in html
         result = run(*base,'--span','11:22','--format','json',data=b'Keep this: hkuu; w;sug.')
         assert json.loads(result.stdout)['candidates'][0]['text']=='Keep this: hello world.'
         result = run('--observed','qwerty','--intended','dvorak','--geometry','iso','--format','json',data=b'<>',code=3)
