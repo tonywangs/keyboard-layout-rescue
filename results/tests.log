@@ -1,0 +1,42 @@
+$ /usr/bin/python3 scripts/xkb_oracle.py
+Verified 294 key/modifier outputs against vendored XKB sources.
+{"package": "libxkbcommon0 1.6.0-1build1", "sha256": "3eb6c7315985803a7c72cb81aa3293b763e6cfc907b70b7b2f641c2827cd90f9", "soname": "libxkbcommon.so.0"}
+Exit: 0
+$ /usr/bin/python3 -m unittest discover -s tests -v
+test_atomic_failures_cleanup (test_cli.CLITests.test_atomic_failures_cleanup) ... ok
+test_cli_errors_and_multiple_candidates (test_cli.CLITests.test_cli_errors_and_multiple_candidates) ... ok
+test_collisions_input_hardlinks_symlinks_and_directories (test_cli.CLITests.test_collisions_input_hardlinks_symlinks_and_directories) ... ok
+test_exact_size_limit (test_cli.CLITests.test_exact_size_limit) ... ok
+test_file_crlf_input_unchanged_and_private_output (test_cli.CLITests.test_file_crlf_input_unchanged_and_private_output) ... ok
+test_invalid_utf8_and_oversized_leave_no_export (test_cli.CLITests.test_invalid_utf8_and_oversized_leave_no_export) ... ok
+test_racing_destination_is_preserved (test_cli.CLITests.test_racing_destination_is_preserved) ... ok
+test_real_sigterm_during_export_cleans_temporary (test_cli.CLITests.test_real_sigterm_during_export_cleans_temporary) ... ok
+test_stdin_exact_no_added_newline (test_cli.CLITests.test_stdin_exact_no_added_newline) ... ok
+test_unresolved_is_valid_export_with_exit_three (test_cli.CLITests.test_unresolved_is_valid_export_with_exit_three) ... ok
+test_600_seeded_sequences_all_six_directed_pairs_both_geometries (test_core.MappingTests.test_600_seeded_sequences_all_six_directed_pairs_both_geometries) ... ok
+test_ambiguous_iso_preserved_with_all_alternatives (test_core.MappingTests.test_ambiguous_iso_preserved_with_all_alternatives) ... ok
+test_ansi_roundtrip_every_character (test_core.MappingTests.test_ansi_roundtrip_every_character) ... ok
+test_deterministic_versioned_serialization_and_hostile_data (test_core.MappingTests.test_deterministic_versioned_serialization_and_hostile_data) ... ok
+test_empty_input_and_bounded_input (test_core.MappingTests.test_empty_input_and_bounded_input) ... ok
+test_every_supported_key_and_shift_against_independent_fixture (test_core.MappingTests.test_every_supported_key_and_shift_against_independent_fixture) ... ok
+test_invalid_spans_and_layouts (test_core.MappingTests.test_invalid_spans_and_layouts) ... ok
+test_mixed_layout_spans (test_core.MappingTests.test_mixed_layout_spans) ... ok
+test_unicode_offsets_and_separators (test_core.MappingTests.test_unicode_offsets_and_separators) ... ok
+test_worked_recovery (test_core.MappingTests.test_worked_recovery) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 2.512s
+
+OK
+Exit: 0
+$ /usr/bin/python3 scripts/check_installed.py
+/tmp/keyboard-rescue-installed-imw1w4s4/isolated installation with spaces/bin/keyboard-rescue
+Installed CLI: 6 offline scenarios passed in a fresh venv, outside checkout; socket audit guard verified.
+Exit: 0
+$ node tests/browser.cjs
+{"browser":"153.0.8010.12","assertions":29,"network":"offline + HTTP(S) abort route","result":"passed"}
+Exit: 0
+$ /usr/bin/python3 scripts/check_tree.py
+Publication limits: 63 regular files, 354001 bytes; every file <= 10 MiB.
+Exit: 0
+All verification stages passed. Benchmarks are separate: python3 scripts/benchmark.py

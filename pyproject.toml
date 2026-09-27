@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "keyboard-layout-rescue"
+version = "1.0.0"
+description = "Offline, explicit keyboard-layout recovery with uncertainty diagnostics"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+
+[project.scripts]
+keyboard-rescue = "keyboard_rescue.cli:main"
+
+[tool.setuptools]
+packages = ["keyboard_rescue"]
+
+[tool.setuptools.package-data]
+keyboard_rescue = ["*.html", "XKB-COPYING"]

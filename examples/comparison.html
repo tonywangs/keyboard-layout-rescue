@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-qcSpv/JRgurHrA2lYL6gNAmP9uB/ZszVGy43D3A3Elk='; style-src 'unsafe-inline'; img-src 'none'; connect-src 'none'; base-uri 'none'; form-action 'none'; object-src 'none'">
+<title>Keyboard Layout Rescue · Local comparison</title>
+<style>
+:root{color-scheme:light;--ink:#152c2b;--muted:#506664;--accent:#006e60;--line:#cad9d3;--paper:#fafbf7;--mark:#fff0b8}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.6 system-ui,sans-serif}main{max-width:1220px;margin:auto;padding:36px 32px 70px}header{border-bottom:1px solid var(--line);padding-bottom:27px}.eyebrow{display:flex;justify-content:space-between;font-size:12px;font-weight:750;letter-spacing:.13em;text-transform:uppercase;color:var(--accent)}h1{font-size:clamp(32px,5vw,52px);line-height:1.1;letter-spacing:-.045em;margin:22px 0 12px}h2{font-size:19px;margin:0 0 10px}h3{font-size:16px;margin:0}.intro{max-width:750px;color:var(--muted);margin:0}.model{font-size:14px;color:var(--muted);margin-top:16px}.notice{border-left:3px solid #bb8100;background:#fff6da;padding:14px 18px;margin:24px 0}.notice p{margin:0}fieldset{border:0;padding:0;margin:28px 0 22px}legend{font-weight:700;margin-bottom:12px}.choices{display:flex;flex-wrap:wrap;gap:12px}.choice{flex:1;min-width:215px;border:1px solid var(--line);background:white;border-radius:8px;padding:15px;cursor:pointer}.choice:has(input:checked){border:2px solid var(--accent);padding:14px;background:#eaf5ef}.choice input{accent-color:var(--accent);margin-right:10px}.choice small{display:block;margin-left:27px;color:var(--muted)}.panes{display:grid;grid-template-columns:1fr 1fr;gap:20px}.pane{min-width:0;border:1px solid var(--line);border-radius:10px;background:white;overflow:hidden}.pane-title{padding:14px 18px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;gap:8px}.pane-title span{font:12px system-ui;color:var(--muted)}pre{margin:0;padding:20px;min-height:255px;max-height:500px;overflow:auto;white-space:pre-wrap;overflow-wrap:anywhere;tab-size:4;font:15px/1.8 ui-monospace,monospace;unicode-bidi:plaintext;direction:ltr}mark{background:var(--mark);color:var(--ink);border-bottom:2px solid #ce9900}button,.download{font:600 14px system-ui;border:1px solid var(--accent);border-radius:6px;padding:11px 16px;background:var(--accent);color:white;cursor:pointer}button.secondary{background:transparent;color:var(--accent)}button:disabled{opacity:.45;cursor:not-allowed}button:focus-visible,input:focus-visible,summary:focus-visible,pre:focus-visible{outline:3px solid #d27d00;outline-offset:4px}.actions{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0 8px}#action-status{min-height:26px;font-size:14px;color:var(--accent)}#selection-status{min-height:28px;color:var(--muted);font-size:14px}.diagnostics{margin-top:28px}table{width:100%;border-collapse:collapse;font-size:14px}th,td{text-align:left;vertical-align:top;border-bottom:1px solid var(--line);padding:10px 12px}th{color:var(--muted);font-weight:600}td{overflow-wrap:anywhere}.table-wrap{overflow:auto}details{border-top:1px solid var(--line);margin-top:32px;padding-top:18px}summary{cursor:pointer;font-weight:700}li{margin-bottom:8px}footer{margin-top:32px;color:var(--muted);font-size:12px}code{font-family:ui-monospace,monospace}.nojs{background:#fff0b8;padding:20px}@media(max-width:720px){main{padding:24px 16px}.panes{grid-template-columns:1fr}.eyebrow{font-size:10px}pre{min-height:170px}.choice{min-width:100%}}
+</style>
+</head>
+<body><main>
+<header><div class="eyebrow"><span>Keyboard Layout Rescue</span><span>Offline · No uploads</span></div>
+<h1>Same keys. Different text.</h1><p class="intro">Compare what the same physical key positions would produce in another layout. Choose the intended layout yourself, then inspect the changes before saving.</p><div id="model" class="model"></div></header>
+<noscript><p class="nojs">JavaScript is required for this local comparison. Use the CLI's JSON or text output if scripts are disabled.</p></noscript>
+<div class="notice"><p><strong>A candidate, not a guarantee.</strong> Rendered text can lose keystroke information. Unresolved characters stay unchanged. Mixed-layout text needs explicit spans.</p></div>
+<fieldset><legend>1. Choose an intended layout</legend><div id="choices" class="choices"></div></fieldset>
+<div id="selection-status" role="status" aria-live="polite">No candidate selected. Choose a layout to compare.</div>
+<section class="panes" aria-label="Text comparison">
+<div class="pane"><div class="pane-title"><h2>Original</h2><span id="original-label"></span></div><pre id="original" tabindex="0" aria-label="Original text"></pre></div>
+<div class="pane"><div class="pane-title"><h2 id="candidate-heading">Candidate</h2><span>Underline = changed</span></div><pre id="candidate" tabindex="0" aria-label="Selected candidate text">Choose an intended layout above.</pre></div>
+</section>
+<div class="actions"><button id="copy" disabled>Copy selected text</button><button id="download" disabled>Download selected text</button><button id="json" class="secondary">Download full analysis JSON</button></div>
+<div id="action-status" role="status" aria-live="polite"></div>
+<section class="diagnostics" aria-labelledby="diagnostics-heading"><h2 id="diagnostics-heading">2. Review uncertainty</h2><p id="diagnostic-summary">Select a candidate to inspect its diagnostics.</p><div class="table-wrap"><table id="diagnostic-table" hidden><thead><tr><th>Position</th><th>Character</th><th>Finding</th><th>Possible key → output</th></tr></thead><tbody id="diagnostic-rows"></tbody></table></div></section>
+<details open><summary>Model and limitations</summary><ul id="limitations"></ul><p>Tabs and line endings are preserved in exports. The visual display may conceal control characters, bidirectional text, or combining marks; consult JSON diagnostics and code-point offsets for exact values.</p></details>
+<footer id="provenance"></footer>
+</main>
+<script type="application/json" id="report-data">{"candidates":[{"changed_characters":8,"changed_spans":[{"end":5,"start":1},{"end":11,"start":7}],"diagnostics":[],"intended_layout":"colemak","mapping_status":"fully_mapped_under_model","text":"hello world\n","unresolved_characters":0},{"changed_characters":10,"changed_spans":[{"end":5,"start":0},{"end":11,"start":6}],"diagnostics":[],"intended_layout":"dvorak","mapping_status":"fully_mapped_under_model","text":"dtggs ,sogi\n","unresolved_characters":0}],"excluded_characters":0,"geometry":"ansi","layout_revision":"2426c5997e9f76a45df2016d1092bff360712e70","limitations":["Candidates are conditional on your layout, geometry and span choices; no language detection is performed.","Rendered text cannot always reveal the original keystrokes. Fully mapped does not mean proven recovery.","Only pinned XKB US QWERTY, Dvorak and Colemak base/Shift levels are modeled, with Caps Lock off.","Caps Lock, dead keys, compose, AltGr, Ctrl/Alt/Meta, keypad, remaps and platform-specific behavior are excluded.","Space, tab, CR and LF are preserved as text separators; their key and modifier history is not inferred.","Unsupported and conflicting ambiguous characters are preserved. No Unicode normalization is applied.","Mixed-layout text needs explicit spans; a valid-looking character does not prove which layout produced it.","Offsets and spans count Unicode code points, not bytes, graphemes or UTF-16 units; ends are exclusive."],"observed_layout":"qwerty","original":"hkuu; w;sug\n","schema_version":"1.0","selected_spans":[{"end":12,"start":0}],"tool_version":"1.0.0"}
+</script>
+<script id="app">
+'use strict';
+const report = JSON.parse(document.getElementById('report-data').textContent);
+const $ = id => document.getElementById(id);
+const names = {qwerty:'US QWERTY', dvorak:'Dvorak', colemak:'Colemak'};
+let selected = null;
+$('original').textContent = report.original;
+$('original-label').textContent = names[report.observed_layout];
+$('model').textContent = `Observed: ${names[report.observed_layout]} · ${report.geometry.toUpperCase()} keys · Base + Shift · ${Array.from(report.original).length} code points · ${report.excluded_characters} outside selected spans`;
+$('provenance').textContent = `Schema ${report.schema_version} · Tool ${report.tool_version} · xkeyboard-config ${report.layout_revision}`;
+for (const limitation of report.limitations) {
+  const item = document.createElement('li'); item.textContent = limitation; $('limitations').append(item);
+}
+function highlight(node, text, spans) {
+  const chars = Array.from(text); const fragment = document.createDocumentFragment(); let pos = 0;
+  for (const span of spans) {
+    fragment.append(document.createTextNode(chars.slice(pos, span.start).join('')));
+    const mark = document.createElement('mark'); mark.textContent = chars.slice(span.start, span.end).join(''); fragment.append(mark); pos = span.end;
+  }
+  fragment.append(document.createTextNode(chars.slice(pos).join(''))); node.replaceChildren(fragment);
+}
+function selectCandidate(candidate) {
+  selected = candidate;
+  $('candidate-heading').textContent = names[candidate.intended_layout];
+  highlight($('original'), report.original, candidate.changed_spans);
+  highlight($('candidate'), candidate.text, candidate.changed_spans);
+  $('copy').disabled = $('download').disabled = false;
+  $('selection-status').textContent = `${candidate.changed_characters} characters changed · ${candidate.unresolved_characters} unresolved · ${candidate.mapping_status === 'unresolved' ? 'Review preserved characters below.' : 'Fully mapped under the selected model; recovery is not proven.'}`;
+  $('action-status').textContent = '';
+  const count = candidate.diagnostics.length;
+  $('diagnostic-summary').textContent = count ? `${count} position-specific findings. Showing the first ${Math.min(count,100)}; full details are in the analysis JSON. Positions are 1-based line/column; indices are 0-based code points.` : 'No unsupported or ambiguous characters in the selected spans under this model. Layout and modifier assumptions still apply.';
+  $('diagnostic-table').hidden = count === 0;
+  $('diagnostic-rows').replaceChildren();
+  for (const diagnostic of candidate.diagnostics.slice(0,100)) {
+    const row = document.createElement('tr');
+    const values = [
+      `${diagnostic.line}:${diagnostic.column} (index ${diagnostic.index}, byte ${diagnostic.byte_offset})`,
+      `U+${diagnostic.character.codePointAt(0).toString(16).toUpperCase().padStart(4,'0')} ${JSON.stringify(diagnostic.character)}`,
+      {unsupported:'Unsupported; preserved', ambiguous:'Conflicting inverse mappings; preserved', convergent:'Multiple keystrokes agree on output'}[diagnostic.kind],
+      diagnostic.choices.map(x => `${x.key}${x.shift ? ' + Shift' : ''} → ${JSON.stringify(x.output)}`).join('; ') || 'No supported key state'
+    ];
+    for (const value of values) { const cell = document.createElement('td'); cell.textContent = value; row.append(cell); }
+    $('diagnostic-rows').append(row);
+  }
+}
+for (const [index, candidate] of report.candidates.entries()) {
+  const label = document.createElement('label'); label.className = 'choice';
+  const radio = document.createElement('input'); radio.type = 'radio'; radio.name = 'candidate'; radio.value = candidate.intended_layout; radio.id = `choice-${index}`;
+  radio.addEventListener('change', () => selectCandidate(candidate));
+  const title = document.createElement('strong'); title.textContent = names[candidate.intended_layout];
+  const subtitle = document.createElement('small'); subtitle.textContent = `${candidate.changed_characters} changed · ${candidate.unresolved_characters} unresolved`;
+  label.append(radio, title, subtitle); $('choices').append(label);
+}
+function download(text, name, type) {
+  const url = URL.createObjectURL(new Blob([text], {type}));
+  const link = document.createElement('a'); link.href = url; link.download = name; document.body.append(link); link.click(); link.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
+}
+$('download').addEventListener('click', () => {
+  if (selected) { download(selected.text, `candidate-${selected.intended_layout}.txt`, 'text/plain;charset=utf-8'); $('action-status').textContent = 'Selected text download requested.'; }
+});
+$('json').addEventListener('click', () => download($('report-data').textContent, 'keyboard-rescue-analysis.json', 'application/json'));
+$('copy').addEventListener('click', async () => {
+  if (!selected) return;
+  const candidate = selected;
+  try { await navigator.clipboard.writeText(candidate.text); $('action-status').textContent = `${names[candidate.intended_layout]} candidate copied.`; }
+  catch { $('candidate').focus(); const range = document.createRange(); range.selectNodeContents($('candidate')); const selection = window.getSelection(); selection.removeAllRanges(); selection.addRange(range); $('action-status').textContent = 'Clipboard unavailable. Candidate text selected; use your browser’s copy command or download.'; }
+});
+</script>
+</body></html>

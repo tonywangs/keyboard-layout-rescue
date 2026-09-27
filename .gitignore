@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.venv/
+node_modules/
+build/
+dist/
+*.egg-info/
+*.log
+!results/tests.log
+*.partial
