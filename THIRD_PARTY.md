@@ -31,3 +31,18 @@ The original upstream source subset and notices can be independently retrieved f
 ## Other dependencies
 
 Browser tests use Playwright 1.63.0 (Apache-2.0, as distributed by Microsoft) and its downloaded Chromium build. Exact npm package integrity is in `package-lock.json`; dependency binaries and `node_modules` are not committed or shipped in the application. No external browser scripts, fonts or styles are included in generated reports.
+
+## BoolQ comprehension experiment
+
+`experiments/comprehension/inputs.json` and the BoolQ passages/questions retained
+or transformed in `results/comprehension/` come from **BoolQ**, by Christopher
+Clark, Kenton Lee, Ming-Wei Chang, Tom Kwiatkowski, Michael Collins and Kristina
+Toutanova (2019), [authors' repository](https://github.com/google-research-datasets/boolean-questions),
+[paper](https://arxiv.org/abs/1905.10044). They are licensed under
+[Creative Commons Attribution-ShareAlike 3.0](https://creativecommons.org/licenses/by-sa/3.0/).
+The upstream validation split is mirrored at pinned revision
+`35b264d03638db9f4ce671b711558bf7ff0f80d5` of `google/boolq` on Hugging Face.
+Selection and keyboard-layout adaptations are described in
+[the experiment protocol](experiments/comprehension/README.md). These dataset
+materials retain CC BY-SA 3.0; the application MIT license does not replace it.
+The model and inference binary are downloaded separately, not redistributed.

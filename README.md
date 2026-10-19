@@ -106,6 +106,19 @@ The comparison alternates baseline/candidate order, with fresh Python generation
 
 See [mapping provenance](THIRD_PARTY.md), [the JSON contract](docs/FORMAT.md), and [validation notes](results/README.md).
 
+## Model comprehension experiment
+
+A separate [bounded CPU experiment](experiments/comprehension/README.md) tests a
+real open model on frozen public BoolQ examples. It requires a usable clean
+baseline before interpreting keyboard-transformed inputs; deterministic recovery
+is not counted as evidence of model understanding. The offline converter and its
+historical validation above remain independent of that experiment.
+
+Open [the offline comparison report](results/comprehension/comparison.html) to
+inspect paired accuracy, uncertainty, and all prompts and responses. Recheck
+the archived evidence with `python3 experiments/comprehension/verify.py`;
+model download and CPU rerun commands are in the experiment protocol.
+
 ## Existing work and source data
 
 Layout conversion is established functionality; novelty is not claimed. [Mahou](https://github.com/iamkarlson/Mahou) converts selected or recently typed text through desktop layout-switching workflows. This project has a narrower offline file/report workflow with explicit assumptions and unresolved-character diagnostics; it incorporates no Mahou code.

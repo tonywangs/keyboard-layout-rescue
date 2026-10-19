@@ -1,0 +1,394 @@
+{
+  "dataset": "google/boolq",
+  "revision": "35b264d03638db9f4ce671b711558bf7ff0f80d5",
+  "split": "validation",
+  "source_sha256": "52355d11524b4b874a9b9dcc278feb10f672d52c4f4eff9872e695ede59820f8",
+  "seed": 20261019,
+  "eligible": 2788,
+  "rows": [
+    {
+      "id": 41,
+      "question": "are new balance and nike the same company",
+      "answer": false,
+      "passage": "New Balance maintains a manufacturing presence in the United States, as well as in the United Kingdom for the European market, where they produce some of their most popular models such as the 990 model--in contrast to its competitors, which often manufacture exclusively outside the USA and Europe. As a result, New Balance shoes tend to be more expensive than those of many other manufacturers. To offset this pricing difference, New Balance claims to differentiate their products with technical features, such as blended gel inserts, heel counters and a greater selection of sizes, particularly for very narrow and/or very wide widths. The company has made total profits of approximately $69 billion since 1992. They are the second most-renown American sporting company, after Nike."
+    },
+    {
+      "id": 127,
+      "question": "did ireland qualify for the 2018 world cup",
+      "answer": false,
+      "passage": "The group winners, Serbia, qualified directly for the 2018 FIFA World Cup. The group runners-up, Republic of Ireland, advanced to the play-offs as one of the best 8 runners-up, where they lost to Denmark and thus failed to qualify."
+    },
+    {
+      "id": 143,
+      "question": "is there such thing as a dominant eye",
+      "answer": true,
+      "passage": "Ocular dominance, sometimes called eye preference or eyedness, is the tendency to prefer visual input from one eye to the other. It is somewhat analogous to the laterality of right- or left-handedness; however, the side of the dominant eye and the dominant hand do not always match. This is because both hemispheres control both eyes, but each one takes charge of a different half of the field of vision, and therefore a different half of both retinas (See Optic Tract for more details). There is thus no direct analogy between ``handedness'' and ``eyedness'' as lateral phenomena."
+    },
+    {
+      "id": 176,
+      "question": "is st andrews university in the russell group",
+      "answer": false,
+      "passage": "All but two of the universities in the Russell Group are part of the Sutton Trust's group of 30 highly selective universities, the Sutton Trust 30 (the absent members being Queen Mary University of London and Queen's University Belfast). The Sutton 13 group of the 13 most highly selective universities only includes one non-Russell Group member, the University of St Andrews. St Andrews was also the only non-Russell Group University in the top 10 by average UCAS tariff score of new undergraduate students in 2015--16, placing fifth with an average score of 525 (and an offer rate of 52.2%). Half of the Russell Group made offers to more than three quarter of their undergraduate applicants in 2015."
+    },
+    {
+      "id": 203,
+      "question": "is tess carroll died in charlie st cloud",
+      "answer": false,
+      "passage": "Along with his friend Alistair and Tess's coach Tink, Charlie takes a boat to find her. The following sunset, Charlie misses his game with Sam. As Charlie confesses his love for his departed sibling, Sam tells Charlie that he loves him back and moves on from the living world. He appears to Charlie as a shooting star in the sky to reveal Tess' location. The group finds Tess' wrecked boat along with her lying on the rocks. Charlie uses his body heat to keep Tess warm until they are found by the Coast Guard."
+    },
+    {
+      "id": 420,
+      "question": "do penalty shoot out goals count in golden boot",
+      "answer": false,
+      "passage": "A shoot-out is usually considered for statistical purposes to be separate from the match which preceded it. In the case of a two-legged fixture, the two matches are still considered either as two draws or as one win and one loss; in the case of a single match, it is still considered as a draw. This contrasts with a fixture won in extra time, where the score at the end of normal time is superseded. Converted shoot-out penalties are not considered as goals scored by a player for the purposes of their individual records, or for ``golden boot'' competitions."
+    },
+    {
+      "id": 455,
+      "question": "is a pickle and a gherkin the same thing",
+      "answer": true,
+      "passage": "A pickled cucumber (commonly known as a pickle in the United States and Canada and a gherkin in Britain, Ireland, Australia, South Africa and New Zealand) is a cucumber that has been pickled in a brine, vinegar, or other solution and left to ferment for a period of time, by either immersing the cucumbers in an acidic solution or through souring by lacto-fermentation. Pickled cucumbers are often part of mixed pickles."
+    },
+    {
+      "id": 543,
+      "question": "is trinity forest golf club a public course",
+      "answer": false,
+      "passage": "Trinity Forest Golf Club is an 18-hole private golf club in the southern United States, located in Dallas, Texas."
+    },
+    {
+      "id": 647,
+      "question": "do evergreen trees lose their leaves in the winter",
+      "answer": false,
+      "passage": "In botany, an evergreen is a plant that has leaves throughout the year, always green. This is true even if the plant retains its foliage only in warm climates, and contrasts with deciduous plants, which completely lose their foliage during the winter or dry season. There are many different kinds of evergreen plants, both trees and shrubs. Evergreens include:"
+    },
+    {
+      "id": 774,
+      "question": "was the right to bear arms in the original constitution",
+      "answer": false,
+      "passage": "The Second Amendment (Amendment II) to the United States Constitution protects the right of the people to keep and bear arms and was adopted on December 15, 1791, as part of the first ten amendments contained in the Bill of Rights. The Supreme Court of the United States has ruled that the right belongs to individuals for self-defense, while also ruling that the right is not unlimited and does not prohibit all regulation of either firearms or similar devices. State and local governments are limited to the same extent as the federal government from infringing this right, per the incorporation of the Bill of Rights."
+    },
+    {
+      "id": 805,
+      "question": "is the calvin cycle and dark reaction the same",
+      "answer": true,
+      "passage": "The light-independent reactions, or dark reactions, of photosynthesis are chemical reactions that convert carbon dioxide and other compounds into glucose. These reactions occur in the stroma, the fluid-filled area of a chloroplast outside the thylakoid membranes. These reactions take the products (ATP and NADPH) of light-dependent reactions and perform further chemical processes on them. There are three phases to the light-independent reactions, collectively called the Calvin cycle: carbon fixation, reduction reactions, and ribulose 1,5-bisphosphate (RuBP) regeneration."
+    },
+    {
+      "id": 852,
+      "question": "can a girl scout be an eagle scout",
+      "answer": false,
+      "passage": "The Gold Award is often compared to the Eagle Scout in the Boy Scouts of America."
+    },
+    {
+      "id": 854,
+      "question": "do flight paths go over the north pole",
+      "answer": true,
+      "passage": "A polar route is an aircraft route across the uninhabited polar ice cap regions. The term ``polar route'' was originally applied to great circle routes between Europe and the west coast of North America in the 1950s."
+    },
+    {
+      "id": 855,
+      "question": "does a woman's age affect birth defects",
+      "answer": true,
+      "passage": "Advanced maternal age is associated with adverse reproductive effects such as increased risk of infertility, and that the children have chromosomal abnormalities. The corresponding paternal age effect is less pronounced."
+    },
+    {
+      "id": 990,
+      "question": "do you need a license to watch tv in england",
+      "answer": true,
+      "passage": "In the United Kingdom and the Crown dependencies, any household watching or recording live television transmissions as they are being broadcast (terrestrial, satellite, cable, or Internet) is required to hold a television licence. Businesses, hospitals, schools and a range of other organisations are also required to hold television licences to watch and record live TV broadcasts. A television licence is also required to receive video on demand programme services provided by the BBC, on the iPlayer catch-up service."
+    },
+    {
+      "id": 1009,
+      "question": "do brown recluse spiders live in the woods",
+      "answer": true,
+      "passage": "Brown recluse spiders build asymmetrical (irregular) webs that frequently include a shelter consisting of disorderly thread. They frequently build their webs in woodpiles and sheds, closets, garages, plenum spaces, cellars, and other places that are dry and generally undisturbed. When dwelling in human residences they seem to favor cardboard, possibly because it mimics the rotting tree bark which they inhabit naturally. Human-recluse contact often occurs when such isolated spaces are disturbed and the spider feels threatened. Unlike most web weavers, they leave these lairs at night to hunt. Males move around more when hunting than the females, which tend to remain nearer to their webs."
+    },
+    {
+      "id": 1016,
+      "question": "is there overlap between the different organ systems in a vertebrate",
+      "answer": true,
+      "passage": "Organs are composed of main tissue, parenchyma, and ``sporadic'' tissues, stroma. The main tissue is that which is unique for the specific organ, such as the myocardium, the main tissue of the heart, while sporadic tissues include the nerves, blood vessels, and connective tissues. The main tissues that make up an organ tend to have common embryologic origins, such as arising from the same germ layer. Functionally-related organs often cooperate to form whole organ systems. Organs exist in all organisms. In single-celled organisms such as bacteria, the functional analogue of an organ is known as an organelle. In plants there are three main organs. A hollow organ is an internal organ that forms a hollow tube, or pouch such as the stomach, intestine, or bladder."
+    },
+    {
+      "id": 1134,
+      "question": "is a certified copy the same as an original uk",
+      "answer": false,
+      "passage": "A certified copy is a copy (often a photocopy) of a primary document that has on it an endorsement or certificate that it is a true copy of the primary document. It does not certify that the primary document is genuine, only that it is a true copy of the primary document."
+    },
+    {
+      "id": 1169,
+      "question": "is impaired driving a criminal offense in canada",
+      "answer": true,
+      "passage": "Impaired driving is the term used in Canada to describe the criminal offence of operating or having care or control of a motor vehicle while the person's ability to operate the motor vehicle is impaired by alcohol or a drug. Impaired driving is punishable under multiple offences in the Criminal Code, with greater penalties depending on the harm caused by the impaired driving. It can also result in various types of driver's licence suspensions."
+    },
+    {
+      "id": 1176,
+      "question": "does company of heroes 2 have a campaign",
+      "answer": true,
+      "passage": "Company of Heroes 2's campaign also tackles Joseph Stalin's Order No. 227, which prohibits retreating except under the direction of senior officers. Starting from the fifth mission set in Stalingrad, Order 227 will be in effect if the player deploys Fresh Conscripts, Frontovik Squads, or Penal Battalions. A time bar appears on the left side of the map display; for that duration, players must not have their soldiers go into full retreat back to headquarters or else said soldiers will be executed for doing so."
+    },
+    {
+      "id": 1191,
+      "question": "is a roma tomato the same as a plum tomato",
+      "answer": true,
+      "passage": "Roma tomato or Roma is a plum tomato popularly used both for canning and producing tomato paste because of their slender and firm nature. Commonly found in supermarkets in some countries, Roma tomatoes are also known as Italian tomatoes or Italian plum tomatoes."
+    },
+    {
+      "id": 1227,
+      "question": "is the colon the same as large intestine",
+      "answer": true,
+      "passage": "The large intestine, also known as the large bowel or colon, is the last part of the gastrointestinal tract and of the digestive system in vertebrates. Water is absorbed here and the remaining waste material is stored as feces before being removed by defecation."
+    },
+    {
+      "id": 1236,
+      "question": "is it safe to swim in brisbane river",
+      "answer": false,
+      "passage": "Environmentally, the river is in a poor condition and has been so for many years. In 2000, the Brisbane River estuary did not meet the national guidelines for environmental standards. The lower reaches received a very poor rating in the 2008 Healthy Waterways report, an annual assessment of river water quality. The major causes of pollution are excess nutrients, hydrocarbons, pesticides and bacteria which become concentrated in the river and its sediment after flowing off surrounding lands. The river is also considered too murky and it is not recommended to swim in its waters."
+    },
+    {
+      "id": 1266,
+      "question": "is better call saul set after breaking bad",
+      "answer": false,
+      "passage": "Better Call Saul is an American television crime drama series created by Vince Gilligan and Peter Gould. It is a spin-off prequel of Gilligan's prior series Breaking Bad. Set in the early 2000s, Better Call Saul follows the story of con-man turned small-time lawyer, Jimmy McGill (Bob Odenkirk), six years before the events of Breaking Bad, showing his transformation into the persona of criminal-for-hire Saul Goodman. Jimmy becomes the lawyer of former beat cop Mike Ehrmantraut (Jonathan Banks), whose relevant skill set allows him to enter the criminal underworld of drug trafficking in Albuquerque, New Mexico. The show premiered on AMC on February 8, 2015. The 10-episode fourth season is scheduled to air starting August 6, 2018, and the show has been renewed for a fifth season."
+    },
+    {
+      "id": 1399,
+      "question": "can you own an assault rifle in massachusetts",
+      "answer": false,
+      "passage": "All private sales are required to be registered through an FA-10 form with the Criminal History Board, Firearm Records division. The state has an assault weapons ban similar to the expired Federal ban. Massachusetts is a ``may issue'', as such the LTC-A is issued in a discretionary manner."
+    },
+    {
+      "id": 1445,
+      "question": "are the church of england and the anglican church the same",
+      "answer": true,
+      "passage": "The Church of England (C of E) is the state church of England. The Archbishop of Canterbury (currently Justin Welby) is the most senior cleric, although the monarch is the supreme governor. The Church of England is also the mother church of the international Anglican Communion. It traces its history to the Christian church recorded as existing in the Roman province of Britain by the third century, and to the 6th-century Gregorian mission to Kent led by Augustine of Canterbury."
+    },
+    {
+      "id": 1459,
+      "question": "is single research design suitable in all research studies",
+      "answer": false,
+      "passage": "In design of experiments, single-subject design or single-case research design is a research design most often used in applied fields of psychology, education, and human behavior in which the subject serves as his/her own control, rather than using another individual/group. Researchers use single-subject design because these designs are sensitive to individual organism differences vs group designs which are sensitive to averages of groups. Often there will be large numbers of subjects in a research study using single-subject design, however--because the subject serves as their own control, this is still a single-subject design. These designs are used primarily to evaluate the effect of a variety of interventions in applied research."
+    },
+    {
+      "id": 1493,
+      "question": "can you be offside on a corner kick",
+      "answer": true,
+      "passage": "There is no offside offence if a player receives the ball directly from a goal kick, a corner kick, a throw-in, or a dropped-ball. It is also not an offence if the ball was last deliberately played by an opponent (except for a deliberate save). In this context, according to the IFAB, ``A 'save' is when a player stops, or attempts to stop, a ball which is going into or very close to the goal with any part of the body except the hands/arms (unless the goalkeeper within the penalty area).''"
+    },
+    {
+      "id": 1530,
+      "question": "is nitric oxide and nitrous oxide the same",
+      "answer": false,
+      "passage": "Nitric oxide should not be confused with nitrous oxide (NO), an anesthetic, or with nitrogen dioxide (NO), a brown toxic gas and a major air pollutant."
+    },
+    {
+      "id": 1540,
+      "question": "do you need to be on us soil to claim asylum",
+      "answer": true,
+      "passage": "The United States recognizes the right of asylum for individuals as specified by international and federal law. A specified number of legally defined refugees who either apply for asylum from inside the U.S. or apply for refugee status from outside the U.S., are admitted annually. Refugees compose about one-tenth of the total annual immigration to the United States, though some large refugee populations are very prominent. Since World War II, more refugees have found homes in the U.S. than any other nation and more than two million refugees have arrived in the U.S. since 1980. In the years 2005 through 2007, the number of asylum seekers accepted into the U.S. was about 40,000 per year. This compared with about 30,000 per year in the UK and 25,000 in Canada. The U.S. accounted for about 10% of all asylum-seeker acceptances in the OECD countries in 1998-2007. The United States is by far the most populous OECD country and receives fewer than the average number of refugees per capita: In 2010-14 (before the massive migrant surge in Europe in 2015) it ranked 28 of 43 industrialized countries reviewed by UNHCR."
+    },
+    {
+      "id": 1585,
+      "question": "is emotionally unstable personality disorder the same as bpd",
+      "answer": true,
+      "passage": "Borderline personality disorder (BPD), also known as emotionally unstable personality disorder (EUPD), is a long-term pattern of abnormal behavior characterized by unstable relationships with other people, unstable sense of self, and unstable emotions. There is frequent dangerous behavior and self-harm. People may also struggle with a feeling of emptiness and a fear of abandonment. Symptoms may be brought on by seemingly normal events. The behavior typically begins by early adulthood, and occurs across a variety of situations. Substance abuse, depression, and eating disorders are commonly associated with BPD. Approximately 10% of people affected die by suicide."
+    },
+    {
+      "id": 1608,
+      "question": "has australia ever been in a world cup final",
+      "answer": true,
+      "passage": "The Australia national soccer team, nicknamed the Socceroos, has represented Australia at the FIFA World Cup finals on five occasions: in 1974, 2006, 2010, 2014 and 2018."
+    },
+    {
+      "id": 1623,
+      "question": "can being too hot cause you to faint",
+      "answer": true,
+      "passage": "Heat syncope is fainting or dizziness as a result of overheating (syncope is the medical term for fainting). It is a type of heat illness. The basic symptom of heat syncope is fainting, with or without mental confusion. Heat syncope is caused by peripheral vessel dilation, resulting in diminished blood flow to the heart and dehydration."
+    },
+    {
+      "id": 1643,
+      "question": "has croatia ever been in a world cup final",
+      "answer": true,
+      "passage": "Croatia national football team have appeared in the FIFA World Cup on five occasions (in 1998, 2002, 2006, 2014 and 2018) since gaining independence in 1991. Before that, from 1930 to 1990 Croatia was part of Yugoslavia. For World Cup records and appearances in that period, see Yugoslavia national football team and Serbia at the FIFA World Cup. Their best result thus far was silver position at the 2018 final, where they lost 4-2 to France."
+    },
+    {
+      "id": 1801,
+      "question": "is the supreme court the highest court in the land",
+      "answer": true,
+      "passage": "A supreme court is the highest court within the hierarchy of courts in many legal jurisdictions. Other descriptions for such courts include court of last resort, apex court, and highest (or final) court of appeal. Broadly speaking, the decisions of a supreme court are not subject to further review by any other court. Supreme courts typically function primarily as appellate courts, hearing appeals from decisions of lower trial courts, or from intermediate-level appellate courts."
+    },
+    {
+      "id": 1807,
+      "question": "is black ops 3 related to black ops 2",
+      "answer": true,
+      "passage": "Black Ops III takes place in 2065, 40 years after the events of Black Ops II, in a world facing upheaval from climate change and new technologies. Similar to its predecessors, the story follows a group of black ops soldiers. The game's campaign is designed to support 4-player cooperative gameplay, allowing for bigger, more open level design and less corridor shooting. As the player character is cybernetically enhanced, players have access to various special activities. The game also features a standalone Zombies mode, and a ``Nightmares'' mode which replaces all enemies as zombies."
+    },
+    {
+      "id": 1853,
+      "question": "is it a requirement to own a gun in switzerland",
+      "answer": false,
+      "passage": "The 2017 report from Small Arms Survey has estimated that the number of civilian-held firearms in Switzerland is of 2.332 million, which given a population of 8.4 million corresponds to a gun ownership of around 27.6 guns per 100 residents."
+    },
+    {
+      "id": 1866,
+      "question": "is the united states part of the eu",
+      "answer": false,
+      "passage": "Relations between the United States of America (US) and the European Union (EU) are the bilateral relations between that country and the supranational organization. The US and EU have been interacting for more than sixty years. US-EU relations officially started in 1953 when US ambassadors visited the European Coal and Steel Community (former EU). The two parties share a good relationship which is strengthened by cooperation on trade, military defense and shared values."
+    },
+    {
+      "id": 1875,
+      "question": "are there any montgomery ward stores still open",
+      "answer": false,
+      "passage": "DMSI applied the brand to a new online and catalog-based retailing operation, with no physical stores, headquartered in Cedar Rapids, Iowa. DMSI then began operating under the Montgomery Ward branding and managed to get it up and running in three months. The new firm began operations in June 2004, selling essentially the same categories of products as the former brand, but as a new, smaller catalog."
+    },
+    {
+      "id": 1883,
+      "question": "can i get $1 000 bill from the bank",
+      "answer": false,
+      "passage": "The Federal Reserve began taking high-denomination currency out of circulation (destroying large bills received by banks) in 1969. As of May 30, 2009, only 336 $10,000 bills were known to exist; 342 remaining $5,000 bills; and 165,372 remaining $1,000 bills. Due to their rarity, collectors often pay considerably more than the face value of the bills to acquire them. Some are in museums in other parts of the world."
+    },
+    {
+      "id": 2042,
+      "question": "is why don't we still a band",
+      "answer": true,
+      "passage": "The band originally formed on September 27, 2016, and announced it the next day via their YouTube account. Since then, the band has released three EPs and five singles."
+    },
+    {
+      "id": 2051,
+      "question": "is it legal to be a bounty hunter in the us",
+      "answer": true,
+      "passage": "Bounty hunters may run into serious legal problems if they try to apprehend fugitives outside the United States, where laws treat the re-arrest of any fugitive by private persons as kidnapping, or the bail agent may incur the punishments of some other serious crime if local and international laws are broken by them. While the United States government generally allows the activities of bounty hunters within the United States, the governments in other sovereign nations consider them a felony."
+    },
+    {
+      "id": 2061,
+      "question": "can you move a queen like a knight",
+      "answer": false,
+      "passage": "During the 15th century the queen's move took its modern form as a combination of the move of the rook and the current move of the bishop. Starting from Spain, this new version -- called ``queen's chess'' (scacchi de la donna), or pejoratively ``madwoman's chess'' (scacchi alla rabiosa) -- spread throughout Europe rapidly, partly due to the advent of the printing press and the popularity of new books on chess. The new rules faced a backlash in some quarters, ranging from anxiety over a powerful female warrior figure to frank abuse against women in general."
+    },
+    {
+      "id": 2108,
+      "question": "is call of duty world at war based on world war 1",
+      "answer": false,
+      "passage": "Call of Duty: World at War is a first-person shooter video game developed by Treyarch and published by Activision. It was released for Microsoft Windows, the PlayStation 3, Xbox 360, and Wii in November 2008. It is the fifth mainstream game of the Call of Duty series and returns the setting to World War II. The game is also the first title in the Black Ops story line. World at War received ports featuring different storyline versions, while remaining in the World War II setting, for the Nintendo DS and PlayStation 2. A Windows Mobile version was also made available by Glu Mobile."
+    },
+    {
+      "id": 2201,
+      "question": "are homologous chromosomes present in both mitosis and meiosis",
+      "answer": true,
+      "passage": "Homologous chromosomes are important in the processes of meiosis and mitosis. They allow for the recombination and random segregation of genetic material from the mother and father into new cells."
+    },
+    {
+      "id": 2220,
+      "question": "has a supreme court justice ever run for president",
+      "answer": true,
+      "passage": "Charles Evans Hughes Sr. (April 11, 1862 -- August 27, 1948) was an American statesman, Republican politician, and the 11th Chief Justice of the United States. He was also the 36th Governor of New York, the Republican presidential nominee in the 1916 presidential election, and the 44th United States Secretary of State."
+    },
+    {
+      "id": 2267,
+      "question": "does a jury have to have 12 members",
+      "answer": false,
+      "passage": "The size of the jury is to provide a ``cross-section'' of the public. In Williams v. Florida, 399 U.S. 78 (1970), the Supreme Court of the United States ruled that a Florida state jury of six was sufficient, that ``the 12-man panel is not a necessary ingredient of ``trial by jury,'' and that respondent's refusal to impanel more than the six members provided for by Florida law ``did not violate petitioner's Sixth Amendment rights as applied to the States through the Fourteenth.'' In Ballew v. Georgia, 435 U.S. 223 (1978), the Supreme Court ruled that the number of jurors could not be reduced below six."
+    },
+    {
+      "id": 2337,
+      "question": "can a player play in the europa league and champions league",
+      "answer": true,
+      "passage": "Almost all cup competitions worldwide operate a cup-tied rule, but leagues do not (as leagues do not eliminate teams during the season). Cup-tied players are only prevented from playing in that specific competition, so for example a player who is cup-tied in the FA Cup may still be eligible to play in the League Cup (or vice versa). UEFA competitions are an exception: because teams can switch between the UEFA Champions League and UEFA Europa League during the season, UEFA has a more complex system for determining whether a player is cup-tied in one or both of those competitions."
+    },
+    {
+      "id": 2394,
+      "question": "does the governor general have to sign all bills passed by federal parliament",
+      "answer": true,
+      "passage": "The most important power is found in section 58: ``When a proposed law passed by both Houses of Parliament is presented to the Governor-General for the Queen's assent, he shall declare ... that he assents in the Queen's name.'' The royal assent brings such laws into effect, as legislation, from the date of signing."
+    },
+    {
+      "id": 2430,
+      "question": "can a node in a tree have two parents",
+      "answer": false,
+      "passage": "This data structure defines a directed graph, and for it to be a tree one must add a condition on its global structure (its topology), namely that at most one reference can point to any given node (a node has at most a single parent), and no node in the tree point to the root. In fact, every node (other than the root) must have exactly one parent, and the root must have no parents."
+    },
+    {
+      "id": 2512,
+      "question": "will there be season 2 of cobra kia",
+      "answer": true,
+      "passage": "On May 24, 2018, it was announced that Martin Kove would reprise his role of John Kreese, after previously appearing in a cameo appearance in the season one finale, as a series regular in season two. Additionally, it was confirmed that Ralph Macchio, William Zabka, Xolo Mariduena, Tanner Buchanan, Mary Mouser, and Courtney Henggeler would return for the second season."
+    },
+    {
+      "id": 2548,
+      "question": "are natural gas and oil the same thing",
+      "answer": false,
+      "passage": "In the 19th century, natural gas was usually obtained as a by-product of producing oil, since the small, light gas carbon chains came out of solution as the extracted fluids underwent pressure reduction from the reservoir to the surface, similar to uncapping a soft drink bottle where the carbon dioxide effervesces. Unwanted natural gas was a disposal problem in the active oil fields. If there was not a market for natural gas near the wellhead it was prohibitively expensive to pipe to the end user."
+    },
+    {
+      "id": 2564,
+      "question": "is common law marriage legal in the united states",
+      "answer": true,
+      "passage": "Common-law marriage, also known as sui juris marriage, informal marriage, marriage by habit and repute, or marriage in fact is a legal framework in a limited number of jurisdictions where a couple is legally considered married, without that couple having formally registered their relation as a civil or religious marriage. The original concept of a ``common-law marriage'' is a marriage that is considered valid by both partners, but has not been formally recorded with a state or religious registry, or celebrated in a formal religious service. In effect, the act of the couple representing themselves to others as being married, and organizing their relation as if they were married, acts as the evidence that they are married. The requirements for a common-law marriage to be recognised differ from state to state."
+    },
+    {
+      "id": 2688,
+      "question": "is a t bone steak the same as a porterhouse",
+      "answer": false,
+      "passage": "The T-bone and porterhouse are steaks of beef cut from the short loin (called the sirloin in Commonwealth countries and Ireland). Both steaks include a ``T''-shaped bone with meat on each side. Porterhouse steaks are cut from the rear end of the short loin and thus include more tenderloin steak, along with (on the other side of the bone) a large strip steak. T-bone steaks are cut closer to the front, and contain a smaller section of tenderloin. The smaller portion of a T-bone, when sold alone, is known as a filet mignon, especially if it's cut from the small forward end of the tenderloin."
+    },
+    {
+      "id": 2714,
+      "question": "is each state guaranteed a minimum number of representatives",
+      "answer": true,
+      "passage": "United States congressional apportionment is the process by which seats in the United States House of Representatives are distributed among the 50 states according to the most recent constitutionally mandated decennial census. Each state is apportioned a number of seats which approximately corresponds to its share of the aggregate population of the 50 states. However, every state is constitutionally guaranteed at least one seat."
+    },
+    {
+      "id": 2763,
+      "question": "does colorado school of mines have a football team",
+      "answer": true,
+      "passage": "The Colorado Mines Orediggers football team represents the Colorado School of Mines in the sport of American football. Gregg Brandon has been the head coach since 2015, taking over for Bob Stitt, the winningest coach in school history. The football team has played in the Rocky Mountain Athletic Conference since 1909. They have claimed to have won 21 conference titles, with 10 of them occurring prior to joining the RMAC (1888, 1890, 1891, 1892, 1893, 1897, 1898, 1904, 1906, 1907). They have won 11 conference titles in the RMAC (1912, 1914, 1918, 1939, 1942, 1951, 1958, 2004, 2010, 2014, 2016), with co-championships in the latter three years. They have made the NCAA Tournament four times in this century. As of the end of the 2017 season, the Orediggers have an all-time record of 460-548-30."
+    },
+    {
+      "id": 2786,
+      "question": "is love never dies a sequel to phantom of the opera",
+      "answer": true,
+      "passage": "Love Never Dies is a romantic musical composed by Andrew Lloyd Webber with lyrics by Glenn Slater and a book by Lloyd Webber, Ben Elton, Frederick Forsyth and Slater. It is a sequel to the long-running musical The Phantom of the Opera and was loosely adapted from Forsyth's novel The Phantom of Manhattan (1999)."
+    },
+    {
+      "id": 2803,
+      "question": "are a meter and a yard the same length",
+      "answer": false,
+      "passage": "The yard (abbreviation: yd) is an English unit of length, in both the British imperial and US customary systems of measurement, that comprises 3 feet or 36 inches. It is by international agreement in 1959 standardized as exactly 0.9144 meters. A metal yardstick originally formed the physical standard from which all other units of length were officially derived in both English systems."
+    },
+    {
+      "id": 2858,
+      "question": "do you have to have a license to own a tv in england",
+      "answer": false,
+      "passage": "In the United Kingdom and the Crown dependencies, any household watching or recording live television transmissions as they are being broadcast (terrestrial, satellite, cable, or Internet) is required to hold a television licence. Businesses, hospitals, schools and a range of other organisations are also required to hold television licences to watch and record live TV broadcasts. A television licence is also required to receive video on demand programme services provided by the BBC, on the iPlayer catch-up service."
+    },
+    {
+      "id": 2958,
+      "question": "is there a bridge between morocco and spain",
+      "answer": false,
+      "passage": "The Strait of Gibraltar crossing is a hypothetical bridge or tunnel spanning the Strait of Gibraltar (about 14 km or 9 miles at its narrowest point) that would connect Europe and Africa. The governments of Spain and Morocco appointed a joint committee to investigate the feasibility of linking the two continents in 1979, which resulted in the much broader Euromed Transport project."
+    },
+    {
+      "id": 3000,
+      "question": "is there a season 5 of the tudors",
+      "answer": false,
+      "passage": "Showtime announced 13 April 2009, that it had renewed the show for a fourth and final season. The network ordered 10 episodes that were first broadcast on 11 April 2010. The series finale was broadcast on 20 June 2010. The final season was shown in Canada on CBC starting 22 September 2010, and ending on 23 November 2010."
+    },
+    {
+      "id": 3038,
+      "question": "is the prostate part of the endocrine system",
+      "answer": false,
+      "passage": "The endocrine system is a chemical messenger system consisting of hormones, the group of glands of an organism that carry those hormones directly into the circulatory system to be carried towards distant target organs, and the feedback loops of homeostasis that the hormones drive. In humans, the major endocrine glands are the thyroid gland and the adrenal glands. In vertebrates, the hypothalamus is the neural control center for all endocrine systems. The field of study dealing with the endocrine system and its disorders is endocrinology, a branch of internal medicine."
+    },
+    {
+      "id": 3172,
+      "question": "is a private equity fund a financial institution",
+      "answer": false,
+      "passage": "A private equity fund is a collective investment scheme used for making investments in various equity (and to a lesser extent debt) securities according to one of the investment strategies associated with private equity. Private equity funds are typically limited partnerships with a fixed term of 10 years (often with annual extensions). At inception, institutional investors make an unfunded commitment to the limited partnership, which is then drawn over the term of the fund. From the investors' point of view, funds can be traditional (where all the investors invest with equal terms) or asymmetric (where different investors have different terms)."
+    },
+    {
+      "id": 3180,
+      "question": "did the broncos beat the seahawks in the super bowl",
+      "answer": false,
+      "passage": "Super Bowl XLVIII was an American football game between the American Football Conference (AFC) champion Denver Broncos and National Football Conference (NFC) champion Seattle Seahawks to decide the National Football League (NFL) champion for the 2013 season. The Seahawks defeated the Broncos 43--8, the largest margin of victory for an underdog and tied for the third largest point differential overall (35) in Super Bowl history with Super Bowl XXVII (1993). It was the first time the winning team scored over 40 points, while holding their opponent to under 10. This became the first Super Bowl victory for the Seahawks and the fifth Super Bowl loss for the Broncos, tied with the New England Patriots for the most of any team. The game was played on February 2, 2014 at MetLife Stadium at the Meadowlands Sports Complex in East Rutherford, New Jersey, the first Super Bowl played outdoors in a cold-weather city and the first Super Bowl to be played on February 2."
+    }
+  ]
+}
