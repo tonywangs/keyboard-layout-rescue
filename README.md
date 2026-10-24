@@ -118,6 +118,9 @@ Open [the offline comparison report](results/comprehension/comparison.html) to
 inspect paired accuracy, uncertainty, and all prompts and responses. Recheck
 the archived evidence with `python3 experiments/comprehension/verify.py`;
 model download and CPU rerun commands are in the experiment protocol.
+The required [layout-hint extension](experiments/comprehension/README.md#layout-hint-extension-in-progress)
+is still in progress; the original six-condition report does not establish
+performance when the model is explicitly told the active layout.
 
 ## Existing work and source data
 

@@ -198,3 +198,38 @@ not a learned ability to reverse layouts. One small quantized model, two layouts
 one fixed prompt and short ASCII inputs cannot support claims about all LLMs,
 Unicode, other layouts or real user typing errors. Shared-host contention and
 unequal token lengths confound runtime comparisons.
+
+## Layout-hint extension (in progress)
+
+The original six conditions above **do not include a layout-hint control**. They
+therefore do not satisfy that part of the full project acceptance criteria.
+A separate post-hoc extension is frozen in
+[`results/comprehension-hints/protocol.json`](../../results/comprehension-hints/protocol.json).
+It evaluates all 64 original items under two additional conditions, adding an
+English instruction naming the active layout and asking for physical-key recovery.
+The transformed passage/question stay byte-identical to the original transformed
+conditions. No mapping table, clean text, labels, or demonstrations are supplied.
+The exact 128 request payloads are hash-pinned before the first call; layout order
+alternates by item. The model, generation settings and sample are unchanged.
+Because the original outcomes were already observed, this is not a new blinded
+study or fresh held-out replication. Comparisons with the old run also have a
+session/time confound. Raw original responses are retained without modification.
+
+The first run is a bounded checkpoint, **not a completed hint experiment**.
+Each validated response is appended immediately. Resume with the same verified
+assets and server command above:
+
+```sh
+python3 experiments/comprehension/hints.py --max-calls 16 --max-seconds 900
+python3 experiments/comprehension/hints.py --verify
+python3 -m unittest discover -s tests -p test_comprehension_hints.py
+```
+
+Each invocation validates the saved prefix and runs at most 16 missing calls.
+A request has a 180-second timeout; the elapsed budget is checked between calls.
+Do not run concurrent writers. The verifier explicitly reports partial evidence;
+add `--require-complete` to require all 128 calls. The raw responses live beside
+`protocol.json` and retain BoolQ's CC BY-SA 3.0 attribution described above.
+After completion, report paired differences against both archived clean and
+corresponding unhinted conditions, with uncertainty and individual examples.
+Until then, the original report remains useful but the full milestone is unfinished.

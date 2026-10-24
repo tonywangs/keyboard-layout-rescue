@@ -1,0 +1,47 @@
+{
+  "frozen_utc": "2026-10-24T11:01:35.888329+00:00",
+  "design": "Post-hoc extension after inspecting original results. All 64 original items, alternating layout order; no prompt tuning. No new held-out claim.",
+  "inputs_sha256": "83139be8a42ea1187754e8898c968862ae5d38e33d7250697d968aaaee3bbf8d",
+  "original_responses_sha256": "f88815f5635a67c10aa8de76d8f2b04b69b669c744c7c3fab872a6ad98aeea8a",
+  "prompts_sha256": "e0cbc6df1e21333ef06c734e89559f72ec8b2546b23a25fcca2e654e53a9199d",
+  "environment": {
+    "recorded_utc": "2026-10-19T03:57:37.949369+00:00",
+    "platform": "Linux-6.8.0-124-generic-x86_64-with-glibc2.39",
+    "python": "3.12.3",
+    "cpu": "DO-Regular x86_64, four visible processors, shared VM",
+    "memory_gib": 7.8,
+    "server_version": "0.7.0-dev (build 11723, commit 31288c9c6), GNU 11.4.0 Linux x86_64",
+    "server_command": [
+      "llama-server",
+      "-m",
+      "model.gguf",
+      "-c",
+      "4096",
+      "-t",
+      "4",
+      "-ngl",
+      "0",
+      "--host",
+      "127.0.0.1",
+      "--port",
+      "8091",
+      "--parallel",
+      "1"
+    ],
+    "model_sha256": "6a1a2eb6d15622bf3c96857206351ba97e1af16c30d7a74ee38970e434e9407e",
+    "runtime_archive_sha256": "8f5652caad0ee6a6473e7eb03a08674f429375554852b83fd7156d550669d069",
+    "inputs_sha256": "83139be8a42ea1187754e8898c968862ae5d38e33d7250697d968aaaee3bbf8d",
+    "cpu_quota": "cgroup cpu.max = 100000 100000 (one CPU-equivalent), four inference threads",
+    "resumption": {
+      "date_utc": "2026-10-19",
+      "retained_records": 315,
+      "retained_prefix_sha256": "1cdadf34b1ad08f1d8ae9ada680955e253be63289957b835d2aaf4bd28e25fc2",
+      "reason": "Previous inference process stopped; resume intact validated prefix without repeating calls.",
+      "model_and_runtime": "Downloaded again using assets.py; both pinned hashes verified. Same server command.",
+      "platform": "Linux-6.8.0-124-generic-x86_64-with-glibc2.39",
+      "python": "3.12.3"
+    }
+  },
+  "completion": "128 independent real hint calls; compare paired accuracy against archived clean and respective unhinted conditions. Partial prefixes are not final estimates.",
+  "extension_runtime": "Pinned assets verified by assets.py on 2026-10-24; same CPU server command, seed and generation settings as archive."
+}
